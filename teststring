@@ -1,0 +1,10 @@
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~
+₁₂₃₄₅₆₇₈₉₀◠⌵+⌝’⍤∠𝄈◡⋯∩□⊓⊸⍩⌈⑄⊛ℂ◇⊟◴∂♭⊙÷⍢↘.∵=η⍖⬚⌕⊢¤:⌊∧⊃⋅≥>⊕∘⊗∞∫⍚⊂▽⊣⧻≤<ₙ⦷≍↥∊∈↧◿×¯¬≠⌅⤚⟜∨⤸,⋕⊜π⊡◌ⁿ⚂⇡/⍥☇↯⇌⍏↻⁅≡\⊏△±∿⍆√?-⨬⊞↙τ⸮⍉◹⍣⧅°⍜◰⊚◫⤙
+ExtractWords ← (
+  # Replace non-alphanumeric characters with spaces
+  ⍜▽(⋅@\s)⊸(¬∈Alphanumeric)
+  # Insert a space in word boundries
+  ⍜⊜∘≡(⊂⊂:" "°⊟)⦷[1 0]≠⌵..
+  # Split words by spaces
+  ⊜(□¯⌵)≠" ".
+)
